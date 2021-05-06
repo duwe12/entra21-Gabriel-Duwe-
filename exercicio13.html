@@ -7,13 +7,11 @@
 </head>
 <body>
     <script>
-        let salario = Number(prompt("Digite o seu salário"))
-        let emprestimo = Number(prompt("Digite o valor do empréstimo"))
-        salario = salario *0.25
-        if (emprestimo > salario) {
-            console.log("Empréstimo não concedido")
+        let numero = Number(prompt("Digite um número"))
+        if (numero > 0) {
+            console.log(`A raiz quadrada deste numero é ${Math.sqrt(numero)}`)
         }else {
-            console.log("Empréstimo concedido")
+            console.log(numero **2) 
         }
     </script>
 </body>

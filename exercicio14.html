@@ -7,7 +7,14 @@
 </head>
 <body>
     <script>
-        
+        let salario = Number(prompt("Digite o seu salário"))
+        let emprestimo = Number(prompt("Digite o valor do empréstimo"))
+        salario = salario *0.25
+        if (emprestimo > salario) {
+            console.log("Empréstimo não concedido")
+        }else {
+            console.log("Empréstimo concedido")
+        }
     </script>
 </body>
 </html>
