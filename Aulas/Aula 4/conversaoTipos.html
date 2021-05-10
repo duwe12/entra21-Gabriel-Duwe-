@@ -14,8 +14,11 @@
         numero = Number(numero)
         console.log(typeof numero)
 
-        let numero2 = "4"
-        numero2 = Number (numero2)
+        // Converção Implicita
+        console.log(+"10" + 10)
+
+        let numero2 = "a"
+        numero2 = Number(numero2)
         console.log(numero2) // NaN (Not a Number)
 
         // Exemplo
@@ -27,7 +30,10 @@
         // Convertendo um valor para String
         let outroNumero = 20
         let outroNumero = String(outroNumero)
-        console.log(typeof outroNumero)    
+        console.log(typeof outroNumero)
+        
+        let resultado = 2 / 3
+        console.log(resultado.toFixed(2)) // Arredondar
     </script>
 </body>
 </html>
