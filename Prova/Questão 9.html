@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sexo = prompt("Digite o seu sexo, caso for feminino digite F e masculino M")
+        let altura = Number(prompt("Digite a sua altura"))
+        let peso
+        switch (sexo) {
+            case "F":
+                peso = (62.1 * altura)- 44.7 
+                console.log(peso.toFixed(2))
+                break;
+            case "M": 
+                peso = (72.7 * altura)- 58
+                console.log(peso.toFixed(2))
+                break
+            default:
+                console.log("Erro")
+                break;
+        }
+    </script>
+</body>
+</html>
