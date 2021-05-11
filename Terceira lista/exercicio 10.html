@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let par = 0
+        let impar = 0
+        for (let i = 0; i < 10; i++){
+            let valores = Number(prompt("Digite os valores"))
+            if (valores % 2 == 1) {
+            impar++
+        } else {
+            par++
+        }
+        }
+        console.log(`Impares: ${impar}\n Pares: ${par}`)
+    </script>
+</body>
+</html>
