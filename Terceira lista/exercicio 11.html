@@ -7,7 +7,21 @@
 </head>
 <body>
     <script>
-        
+        let fora = 0
+        let dentro = 0
+        let i = 0
+        while (i >= 0) {
+            let numero = Number(prompt("Digite um numero"))
+            if (numero < 0) {
+                break
+            } else if (numero > 0 && numero <10 || numero > 20) {
+                fora++ 
+            } else if (numero >9 && numero <21) {
+                dentro++
+            } 
+        }
+        console.log(`${dentro} números estão no intervalo`)
+        console.log(`${fora} números estão fora do intervalo`)
     </script>
 </body>
 </html>
