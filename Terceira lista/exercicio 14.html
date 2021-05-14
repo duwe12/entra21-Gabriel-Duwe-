@@ -7,7 +7,13 @@
 </head>
 <body>
     <script>
-        let numero = Number(prompt("Digite o numero, para mostrarmos ele fatorado"))
+        let fatorial = +prompt("Digite um valor para saber seu fatorial:")
+        let resultado = fatorial
+
+        for (let i = 1; i < fatorial; i++) {
+            resultado *= i
+        }
+        console.log(`O resultado de ${fatorial}! é ${resultado}\n\n`)
     </script>
 </body>
 </html>

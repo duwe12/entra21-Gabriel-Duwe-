@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let votos = 0
+        let jose = 0
+        let maria = 0
+        let joão = 0
+        let brancos = 0
+        let nulos = 0
+        while (true) {
+            votos = +prompt("1 - José Bolinha\n2 - Maria Nascimento\n3 - João da Silva\n4 - Voto nulo\n5 - Voto em branco\nDigite seu voto:")
+            if (votos < 1) {
+                break
+            }
+            if (votos === 1) {
+            jose++
+        }else if (votos === 2){
+            maria++ 
+        }else if (votos === 3) {
+            joão++
+        }else if (votos === 4) {
+            nulos++
+        }else if (votos === 5) {
+            brancos++
+        }
+        }
+        console.log(`José Bolinha = ${jose}\n Maria Nascimento = ${maria}\n João da Silva = ${joão}\n Voto nulo = ${nulos}\n Voto em branco = ${brancos}`)
+    </script>
+</body>
+</html>
