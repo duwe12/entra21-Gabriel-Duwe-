@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vetor = []
+        let localizador 
+        let flag 
+        for (let i = 0; i < 5; i++) {
+            vetor[i] = prompt("Digite os nomes")
+        }
+        localizador = prompt("Digite o nome procurado")
+        for (let i = 0, tamanhoVetor = vetor.length; i < tamanhoVetor; i++) {
+            if (localizador === vetor[i]) {
+                flag = true
+                break
+            }
+        }
+        if (flag) {
+            console.log("Achei o nome")
+        }else {
+            console.log("Não achei")
+        }
+
+        
+
+    </script>
+</body>
+</html>

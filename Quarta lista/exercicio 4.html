@@ -6,19 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <script> 
-        let par = 0
+    <script>
         let numeros = []
-        for (let i = 0; i < 10; i++) {
+        let numeros2 = []
+        for (let i = 0; i < 5; i++) {
             numeros[i] = +prompt("Digite um número")
+            console.log(numeros[i])
         }
-        console.log(numeros)
-        for (let i = 0, tamanhoVetor = numeros.length; i < tamanhoVetor; i++) {
-            if (numeros[i] % 2 === 0) {
-                par++
-            }
-        }
-        console.log(par)
+        console.log(`${numeros} \n${numeros.reverse()}`)
     </script>
 </body>
 </html>

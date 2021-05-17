@@ -6,19 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <script> 
-        let par = 0
+    <script>
+        let maior = 0
         let numeros = []
-        for (let i = 0; i < 10; i++) {
+        let posi = 0
+        for (let i = 0; i < 5; i++) {
             numeros[i] = +prompt("Digite um número")
         }
         console.log(numeros)
         for (let i = 0, tamanhoVetor = numeros.length; i < tamanhoVetor; i++) {
-            if (numeros[i] % 2 === 0) {
-                par++
+            if (numeros[i] > maior) {
+                maior = numeros[i]
+                posi = numeros.indexOf(maior)
             }
         }
-        console.log(par)
+        console.log(maior, posi)
+        
     </script>
 </body>
 </html>
