@@ -7,12 +7,18 @@
 </head>
 <body>
     <script>
-        function funcaopot (a, b){
-            a** b 
-        }
-        let a = +prompt("Digite o primeiro numero")
-        let b = +prompt("Digite o segundo numero")
-        console.log(funcaopot(a, b))
+        function potencia(a , b) {
+            if (a < 0){
+            return 0
+        } else if(b != 0){
+            return (a**b)
+        } 
+        return 1
+
+        }      
+        a = +prompt("Digite o valor de a")
+        b = +prompt("Digite o valor de b")
+        console.log(potencia(a,b))
     </script>
 </body>
 </html>
