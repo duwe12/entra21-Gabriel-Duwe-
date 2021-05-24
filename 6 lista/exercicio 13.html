@@ -7,9 +7,11 @@
 </head>
 <body>
     <script>
-        let vetor = [1,2,3,4,5]
-        let minimoMax = vetor => [vetor[0] , vetor[vetor.length - 1]]
-        console.log (minimoMax(vetor))
+        let idade = +prompt("Digite sua idade")
+        function converteDias(idade) {
+            return (idade * 12 * 30)
+        }
+        console.log(converteDias(idade))
     </script>
 </body>
 </html>

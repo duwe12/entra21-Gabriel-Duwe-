@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fatorial = +prompt("Digite um valor para saber seu fatorial:")
+        let resultado = fatorial
+        function calculoFatorial (resultado, fatorial) {
+            for (let i = 1; i < fatorial; i++) {
+            resultado *= i
+        }
+        console.log(`O resultado de ${fatorial}! é ${resultado}\n\n`)
+        }
+        console.log(calculoFatorial(resultado, fatorial))
+    </script>
+</body>
+</html>
