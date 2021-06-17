@@ -10,6 +10,9 @@ body {
     line-height: 1.65;
     font-family: 'Source Sans Pro', sans-serif;
 }
+section{
+    background-image: #ffffff;
+}
 h1, h2, h3, h4, a{
     font-size: 42pt;
     font-weight: 300;
