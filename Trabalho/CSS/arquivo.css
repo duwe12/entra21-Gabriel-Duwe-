@@ -21,8 +21,14 @@ nav, section{
 ul {
     list-style: none;
     display: inline-flex;
+    padding-left: 0%;
 }
 footer{
     text-align: center;
 }
-
+.container-imagens img {
+    width: 100%;
+}
+.container-imagens {
+    column-gap: 10px;
+}
