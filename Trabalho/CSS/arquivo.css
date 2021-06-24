@@ -1,18 +1,16 @@
 body {
-    /*background-image: url(../Imagens/Alemanha.jpg);*/
-    background: #1E9600;  /* fallback for old browsers */
+    background: #1E9600;  
     background: -webkit-linear-gradient(to bottom, #000000, #ff0000, #e5ff00);  
     background: linear-gradient(to bottom, #000000, #ff0000, #e5ff00);  
-
     background-attachment: fixed;
 }
-
 section {
-    background-color: rgba(255, 255, 255, 0.2)
-        
+    background-color: rgba(255, 255, 255, 0.2)    
 }
-h1 {
-    color: blanchedalmond;
+h1{
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: white;
 }
 header{
     text-align: center;
@@ -36,4 +34,3 @@ footer{
 .container-imagens {
     column-gap: 10px;
 }
-
