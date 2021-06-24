@@ -1,5 +1,9 @@
 body {
-    background-image: url(../Imagens/Alemanha.jpg);
+    /*background-image: url(../Imagens/Alemanha.jpg);*/
+    background: #1E9600;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000, #ff0000, #e5ff00);  
+    background: linear-gradient(to bottom, #000000, #ff0000, #e5ff00);  
+
     background-attachment: fixed;
 }
 
@@ -32,3 +36,4 @@ footer{
 .container-imagens {
     column-gap: 10px;
 }
+
