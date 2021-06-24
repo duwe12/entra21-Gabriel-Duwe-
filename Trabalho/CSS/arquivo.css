@@ -5,25 +5,20 @@ body {
     background: linear-gradient(to bottom, #000000, #ff0000, #e5ff00);  
     background-attachment: fixed;
 }
+header{
+    color: white;
+    text-align: center; 
+}
 section {
     /*Colocando um fundo branco meio transparente*/
+    text-align: center;
+    color: white;
     background-color: rgba(255, 255, 255, 0.2)    
 }
-h1{
-    /*Cor do titulo e cor de fundo*/
-    background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
-    color: white;
-}
-header{
-    /*Alinhando texto e cor de texto*/
-    text-align: center;
-    color: white;
-}
-nav, section{
+nav{
     /*Alinhando testo e cor*/
     text-align: center;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 ul {
     /*Tirando o ponto da ul*/
