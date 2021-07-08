@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Animais
+            <ul>
+                <li>Mamíferos
+                    <ul>
+                        <li>Vacas</li>
+                        <li>Macacos</li>
+                        <li>Cachorros</li>
+                        <li>Tigres</li>
+                    </ul>
+                </li>
+                <li>Outros
+                    <ul>
+                        <li>Cobras</li>
+                        <li>Pássaros</li>
+                        <li>Lagartos</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        let lis = document.querySelectorAll("ul li")
+       for (let li of lis) {
+           let descendentes = li.querySelectorAll("li")
+           if (descendentes.length){
+               li.firstChild.data += `[${descendentes.length}]`
+           }
+       }
+    </script>
+</body>
+</html>
