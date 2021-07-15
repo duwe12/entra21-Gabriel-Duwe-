@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1) let dataParametros = new Date(2012, 1, 20, 3, 12, 0)
+console.log(dataParametros)
+        2)
+
+
+        let data = new Date(2012, 1, 20, 3, 12, 0)
+        let diasemana = (`Dia da semana: ${data.getDay()}`)
+        function obtemDiaSemana(diasemana) {
+            switch (data) {
+                case 0:
+                    console.log("Domingo")
+                    break;
+                case 1:
+                    console.log("Segunda-Feira")
+                    break;
+                case 2:
+                    console.log("Terça-Feira")
+                    break;
+                case 3:
+                    console.log("Quarta-Feira")
+                    break;
+                case 4:
+                    console.log("Quinta-Feira")
+                    break;
+                case 5:
+                    console.log("Sexta-Feira")
+                    break; 
+                case 6:
+                    console.log("Sábado")
+                    break;   
+                default:
+                    break;
+            }
+        }
+        console.log(obtemDiaSemana(data))
+*/
+        let data = new Date(2021, 6, 15, 23, 0, 0)
+        function segundosParaAmanha() {
+            let horaFaltando = 24 - hora
+            let resultado = horaFaltando * 60 * 60
+            console.log(resultado)
+        }
+        let hora = data.getHours()
+        segundosParaAmanha()
+    </script>
+</body>
+</html>
