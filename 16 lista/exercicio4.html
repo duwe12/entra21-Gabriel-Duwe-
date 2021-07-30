@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Crie uma função dobrarEm5Segundos(numero, cb) que dobre o valor de um número após 5 segundos. Se o valor recebido não for um número
+        ele irá chamar a cb passando um erro. 
+
+        callback(error, result) => Se um erro for passado irá mostrar a mensagem: "A operação falhou! [mensagem do erro]".
+        Senão, irá mostrar a mensagem: "A operação foi bem sucedida! O resultado é [result]".*/
+        class OddNumberError extends Error {
+            constructor(message) {
+                super(message);
+                this.name = "OddNumberError";
+            }
+        }
+         function dobrar(numero, cb) {
+            setTimeout(() => {
+                const resultado = numero;
+            if (numero !== isNaN) {
+                cb(new OddNumberError("O valor é ímpar"));
+            }else{
+                cb(null, resultado);
+            }
+        
+        },5000);
+        return numero * 2;
+    }
+    
+        try {
+            const numero = 5;
+
+            const resultado = dobrar(numero);
+            console.log(`O dobro de ${numero} é ${resultado}`);
+        } catch (error) {
+            console.log(error.message);
+        }
+
+        dobrar( (error, resultado) => {
+            if (error) {
+                console.log(`A operação falhou! ${error.message}`);
+            } else {
+                console.log(`A operação foi bem sucedida! O número ${resultado} é par`);
+            }
+        });
+        console.log("Finalizando programa...");
+    </script>
+</body>
+</html>
